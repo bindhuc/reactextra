@@ -1,11 +1,32 @@
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 
-export class Class extends Component {
-  render() {
-    return (
-      <div></div>
-    )
-  }
+export default function Class() {
+
+const [show, setShow] = useState(true)
+
+
+function clickchange(){
+  setShow(!show);
 }
 
-export default Class
+
+  return (
+
+    <div >
+     
+      <button className='btn2' onClick={ clickchange}>click for class </button>
+   {
+  
+  show  ?  <div > <h1 style={{fontSize:"30px"}}>This is  class component</h1>
+      </div> 
+    : null
+  
+}
+
+      
+      
+ 
+
+    </div>
+  )
+}

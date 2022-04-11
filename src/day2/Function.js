@@ -1,31 +1,29 @@
-import React, {Component} from 'react'
+import React , {useState} from 'react'
 
-class Function extends Component {
-constructor(props){
-    super(props);
-this.state ={
-    count:'0',
-}
-}
-increment = ()=>{
-    this.setState({
-        count:this.state.count+1
-    })
-}
-decrement = ()=>{
-    this.setState({
-        count:this.state.count-1
-    })
+
+const Function = () => {
+
+  const [show, setShow] = useState(true)
+
+  function clickchangefun(){
+    setShow(!show);
+  }
+  
+    return (
+  
+      <div  >
+        
+        <button className='btn1' onClick={ clickchangefun}>click for function </button>
+ {
+    
+    show  ?  <div className='bigbox1'> <h1 style={{fontSize:"30px"}}>This is  functional component</h1>
+        </div> 
+      : null
+    
+  } 
+   
+  </div>
+  )
 }
 
-    render(){
-        return(
-<div>
-<button onClick={this.increment}>+</button>
-<button onClick={this.decrement}>-</button>
-<h1>{this.state.count}</h1>
-</div>
-        )
-    }
-}
 export default Function
