@@ -1,0 +1,34 @@
+•	FEATURES OF REACT
+1.	Supports easy going
+2.	No need creact  multiple file and connect them, in react we use html inside js
+3.	
+•	VDOM
+DOM is created by converting HTML CSS and JS Real DOM whenever React components gets mounted on the screen for the first time , if we want to make any changes on screen in react there are two vdom’s one is real dom an other is dummy dom so these changes will be updated in updated in dummy dom and other dom will be excat copy of dom so these two doms compare and check for changes this process is called diffing algorithm and modifining the earlier dom with new dom is called reconcialation
+
+•	SPA
+single page application which do not reload the browser and update the changes we can achive by routing or cra
+
+•	MPA
+multiple page application is in which reload’s the browser to update the changes
+
+•	JSX
+HTML like syntax used in react , it is a syntax allows you to write html in react
+
+•	Library vs framework
+       Library 	Framework 
+Collection of functions	Collection of multiple libraries
+Execution of code is decided by developers	Execution of code is already decided
+Developers design the structure	Provides structure , need to put code
+
+•	Gitignore: we can only push the files we need except like nodemodules
+
+
+
+
+
+Function comp	
+No render method is required
+Constructors are not used
+Class comp	
+Render method is used which returns jsx
+Constructors are used
